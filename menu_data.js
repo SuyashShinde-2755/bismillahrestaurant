@@ -1,0 +1,72 @@
+const MENU_DATA = [
+    {
+        "category": "starters",
+        "name": "Pani Puri Shots",
+        "description": "Crispy hollow balls filled with spiced potato and tangy mint water.",
+        "price": "₹150",
+        "tags": ["veg", "vegan", "spicy"]
+    },
+    {
+        "category": "starters",
+        "name": "Samosa Chaat",
+        "description": "Crushed samosas topped with yogurt, tamarind chutney, and sev.",
+        "price": "₹180",
+        "tags": ["veg", "spicy"]
+    },
+    {
+        "category": "starters",
+        "name": "Chicken 65",
+        "description": "Spicy, deep-fried chicken chunks tempered with curry leaves.",
+        "price": "₹250",
+        "tags": ["spicy"]
+    },
+    {
+        "category": "mains",
+        "name": "Butter Chicken",
+        "description": "Tandoori chicken simmered in a rich, creamy tomato gravy.",
+        "price": "₹450",
+        "tags": []
+    },
+    {
+        "category": "mains",
+        "name": "Lamb Rogan Josh",
+        "description": "Aromatic Kashmiri lamb curry with fennel and dry ginger.",
+        "price": "₹550",
+        "tags": ["spicy"]
+    },
+    {
+        "category": "mains",
+        "name": "Dal Makhani",
+        "description": "Black lentils cooked overnight with butter and cream.",
+        "price": "₹350",
+        "tags": ["veg"]
+    },
+    {
+        "category": "mains",
+        "name": "Palak Paneer",
+        "description": "Cottage cheese cubes in a smooth spinach gravy.",
+        "price": "₹380",
+        "tags": ["veg"]
+    },
+    {
+        "category": "desserts",
+        "name": "Gulab Jamun",
+        "description": "Soft milk solids dumplings soaked in rose-flavored sugar syrup.",
+        "price": "₹120",
+        "tags": ["veg"]
+    },
+    {
+        "category": "desserts",
+        "name": "Rasmalai",
+        "description": "Flattened cheese balls soaked in thickened saffron milk.",
+        "price": "₹140",
+        "tags": ["veg"]
+    },
+    {
+        "category": "desserts",
+        "name": "Mango Kulfi",
+        "description": "Traditional Indian ice cream made with alphonso mangoes.",
+        "price": "₹100",
+        "tags": ["veg"]
+    }
+];

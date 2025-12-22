@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bismillah | Modern Indian Cuisine</title>
+    <meta name="description"
+        content="Experience the finest modern Indian cuisine at Bismillah. Authentic flavors, premium ambiance.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bismillah</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><button id="theme-toggle" class="icon-btn-small" aria-label="Toggle Dark Mode"><span
+                            class="material-symbols-rounded">dark_mode</span></button></li>
+                <li><button id="order-btn" class="btn btn-primary">Order Online</button></li>
+                <li><a href="#reservation" class="btn btn-outlined">Book a Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-large fade-in-up">Taste the Soul of <span class="text-gradient">India</span></h1>
+            <p class="headline-small fade-in-up delay-1">A culinary journey through spices, tradition, and modern
+                elegance.</p>
+            <div class="hero-actions fade-in-up delay-2">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#reservation" class="btn btn-outlined">Book a Table</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-medium">Our Specialties</h2>
+                <p class="body-large">Curated dishes that define our legacy</p>
+            </div>
+            <div class="grid-3">
+                <!-- Cards will be populated here -->
+                <div class="card specialty-card">
+                    <div class="card-image-container">
+                        <img src="dish_butter_chicken.jpg" alt="Butter Chicken" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title-large">Royal Butter Chicken</h3>
+                        <p class="body-medium">Tender chicken simmered in a rich, creamy tomato sauce with fenugreek.
+                        </p>
+                    </div>
+                </div>
+                <div class="card specialty-card">
+                    <div class="card-image-container">
+                        <img src="dish_paneer.jpg" alt="Paneer Tikka" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title-large">Smoked Paneer Tikka</h3>
+                        <p class="body-medium">Cottage cheese marinated in yogurt and spices, char-grilled to
+                            perfection.</p>
+                    </div>
+                </div>
+                <div class="card specialty-card">
+                    <div class="card-image-container">
+                        <img src="dish_biryani.jpg" alt="Hyderabadi Biryani" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title-large">Nizam's Biryani</h3>
+                        <p class="body-medium">Fragrant basmati rice cooked with marinated meat and saffron on dum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section id="chef" class="section bg-surface-variant">
+        <div class="container split-layout">
+            <div class="chef-image-wrapper">
+                <img src="chef_arabian.jpg" alt="Head Chef" class="chef-image">
+            </div>
+            <div class="chef-content">
+                <span class="label-large text-primary">Meet the Master</span>
+                <h2 class="display-medium">Chef Ahmed Al-Sayed</h2>
+                <p class="body-large">With over 20 years of experience in royal kitchens across the Middle East, Chef
+                    Ahmed brings a
+                    fusion of Arabian heritage and modern culinary techniques. His philosophy is simple: "Bismillah, let
+                    the food speak to the soul."</p>
+                <div class="chef-signature">Ahmed Al-Sayed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-medium">The Menu</h2>
+                <p class="body-large">Explore our diverse offerings</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active" data-category="starters">Starters</button>
+                <button class="tab" data-category="mains">Main Course</button>
+                <button class="tab" data-category="desserts">Desserts</button>
+            </div>
+
+            <div class="filters">
+                <span class="filter-label">Dietary:</span>
+                <label class="chip"><input type="checkbox" value="veg"> Vegetarian</label>
+                <label class="chip"><input type="checkbox" value="vegan"> Vegan</label>
+                <label class="chip"><input type="checkbox" value="spicy"> Spicy</label>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-medium">The Vibe</h2>
+                <p class="body-large">A glimpse into our world</p>
+            </div>
+            <div class="masonry-grid">
+                <div class="masonry-item"><img src="gallery_1.jpg" alt="Interior"></div>
+                <div class="masonry-item"><img src="gallery_2.jpg" alt="Spices"></div>
+                <div class="masonry-item"><img src="gallery_3.jpg" alt="Bar"></div>
+                <div class="masonry-item"><img src="dish_butter_chicken.jpg" alt="Food"></div>
+                <div class="masonry-item"><img src="dish_biryani.jpg" alt="Food"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section bg-surface-variant">
+        <div class="container split-layout">
+            <div class="event-content">
+                <span class="label-large text-primary">Private Dining</span>
+                <h2 class="display-medium">Celebrate with Us</h2>
+                <p class="body-large">From intimate gatherings to grand banquets, our private dining spaces offer the
+                    perfect setting for your special moments. Customized menus and dedicated service included.</p>
+                <button class="btn btn-primary">Inquire Now</button>
+            </div>
+            <div class="event-image-wrapper">
+                <img src="event_arabian.jpg" alt="Private Dining" class="event-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-medium">Spice Chronicles</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card blog-card">
+                    <div class="card-image-container">
+                        <img src="blog_spices.jpg" alt="Spices">
+                    </div>
+                    <div class="card-content">
+                        <span class="label-large text-primary">Culinary History</span>
+                        <h3 class="title-large">The Secret of Saffron</h3>
+                        <p class="body-medium">Discover why this crimson thread is the world's most expensive spice.</p>
+                        <a href="#" class="text-btn">Read More</a>
+                    </div>
+                </div>
+                <!-- More blog posts can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section bg-surface-variant">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-medium">Guest Stories</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track" id="testimonial-track">
+                    <!-- Testimonials via JS -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="icon-btn prev-btn"><span class="material-symbols-rounded">arrow_back</span></button>
+                    <button class="icon-btn next-btn"><span
+                            class="material-symbols-rounded">arrow_forward</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="section">
+        <div class="container reservation-container">
+            <div class="reservation-form-wrapper">
+                <h2 class="display-medium">Book a Table</h2>
+                <p class="body-large">Reserve your spot for an unforgettable dining experience.</p>
+
+                <form id="reservation-form" class="reservation-form">
+                    <div class="form-group">
+                        <label for="name" class="label-medium">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="label-medium">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date" class="label-medium">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time" class="label-medium">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests" class="label-medium">Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5+">5+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-medium">Find Us</h2>
+                <p class="body-large">Visit us for an unforgettable experience</p>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.792557761763!2d72.87515087596547!3d19.07284695207432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c88e6634c49d%3A0x8673322d72e4726!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709820000000!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Bismillah</a>
+                <p class="body-medium">Modern Indian Cuisine</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Explore</h4>
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#location">Location</a>
+                    <a href="#reservation">Reservations</a>
+                </div>
+                <div class="link-group">
+                    <h4>Contact</h4>
+                    <p>123 Spice Avenue, Food City</p>
+                    <p>+91 98765 43210</p>
+                    <p>hello@saffronspice.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bismillah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="material-symbols-rounded icon-success">check_circle</span>
+            <h3 class="headline-small">Reservation Confirmed!</h3>
+            <p class="body-medium">We look forward to hosting you.</p>
+            <button class="btn btn-primary" id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <!-- Order Online Modal -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <h3 class="headline-small">Order Online</h3>
+            <p class="body-medium">Choose your delivery partner:</p>
+            <div class="delivery-options">
+                <button class="btn btn-outlined full-width">UberEats</button>
+                <button class="btn btn-outlined full-width">Zomato</button>
+                <button class="btn btn-outlined full-width">Swiggy</button>
+            </div>
+            <button class="btn btn-text" id="close-order-modal">Cancel</button>
+        </div>
+    </div>
+
+    <script src="menu_data.js"></script>
+    <script src="script.js?v=3"></script>
+</body>
+
+</html>
