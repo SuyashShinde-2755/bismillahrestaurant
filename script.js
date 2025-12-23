@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Testimonials Carousel
     const testimonials = [
         {
-            text: "The best Indian food I've had outside of Delhi. The Butter Chicken is absolute heaven!",
+            text: "The best food I've had. The Butter Chicken is absolute heaven!",
             author: "Sarah Jenkins"
         },
         {

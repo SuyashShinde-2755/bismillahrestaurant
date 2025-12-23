@@ -30,7 +30,7 @@ const MENU_DATA = [
     {
         "category": "mains",
         "name": "Lamb Rogan Josh",
-        "description": "Aromatic Kashmiri lamb curry with fennel and dry ginger.",
+        "description": "Aromatic lamb curry with fennel and dry ginger.",
         "price": "₹550",
         "tags": ["spicy"]
     },
@@ -65,7 +65,7 @@ const MENU_DATA = [
     {
         "category": "desserts",
         "name": "Mango Kulfi",
-        "description": "Traditional Indian ice cream made with alphonso mangoes.",
+        "description": "Traditional ice cream made with alphonso mangoes.",
         "price": "₹100",
         "tags": ["veg"]
     }
